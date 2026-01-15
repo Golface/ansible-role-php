@@ -168,6 +168,10 @@ APCu ini directives that are often customized on a system. Set the `php_apc_shm_
 
 The platform-specific APC configuration filename. Generally the default should work, but in some cases, you may need to override the filename.
 
+### Stack overflows configurations
+
+    php_zend_max_allowed_stack_size: "0"
+
 #### Ensuring APC is installed
 
 If you use APC, you will need to make sure APC is installed (it is installed by default, but if you customize the `php_packages` list, you need to include APC in the list):

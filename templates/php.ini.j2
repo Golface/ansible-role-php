@@ -18,6 +18,7 @@ disable_functions = {{ php_disable_functions|join(",") }}
 disable_classes =
 
 zend.enable_gc = On
+zend.max_allowed_stack_size = {{ php_zend_max_allowed_stack_size }}
 
 ;;;;;;;;;;;;;;;;;
 ; Miscellaneous ;
